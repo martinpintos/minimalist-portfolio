@@ -11,7 +11,7 @@ export default function Skills() {
             <Chip
               size="md"
               variant="shadow"
-              color="primary"
+              color="success"
               classNames={{
                 base: "capitalize",
                 content: "font-semibold",

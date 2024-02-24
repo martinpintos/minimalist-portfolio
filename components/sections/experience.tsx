@@ -85,7 +85,7 @@ export default function Experience() {
                     <ul className="flex flex-wrap -m-1">
                       {highlights.map((highlight) => (
                         <li key={highlight} className="m-1">
-                          <Chip size="sm" variant="shadow" color="warning">
+                          <Chip size="sm" variant="shadow" color="success">
                             {highlight}
                           </Chip>
                         </li>
