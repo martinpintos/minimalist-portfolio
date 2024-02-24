@@ -27,9 +27,7 @@ export default function Education() {
             <li>
               <article className="space-y-1.5">
                 <header className="justify-between flex-row flex items-center">
-                  <h3 className="font-bold text-base hover:underline">
-                    {institution}
-                  </h3>
+                  <h3 className="font-bold text-base">{institution}</h3>
 
                   <time className="text-sm font-semibold text-foreground-900">
                     {period}

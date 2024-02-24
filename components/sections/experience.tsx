@@ -1,5 +1,5 @@
 import Section from "@/components/section";
-import { work } from "@/lib/cv.json";
+import cv from "@/lib/cv.json";
 import { Chip } from "@nextui-org/react";
 import Link from "next/link";
 
@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <Section title="Experiencia laboral">
       <ul className="flex flex-col space-y-8">
-        {work.map(
+        {cv.work.map(
           ({ name, position, url, startDate, endDate, summary, badges }) => {
             const start = new Date(startDate)
               .toLocaleDateString("es-ES", {
