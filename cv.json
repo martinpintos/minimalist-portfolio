@@ -1,0 +1,174 @@
+{
+  "basics": {
+    "name": "Martín Pintos",
+    "label": "Frontend Developer versátil comprometido con la creación de experiencias de usuario elegantes e inmersivas",
+    "image": "/me.webp",
+    "email": "martin.d.pintos@gmail.com",
+    "phone": "+54 9 11 7362 5845",
+    "url": "https://martinpintos.com",
+    "summary": "Con más de cuatro años de experiencia, he desarrollado y perfeccionado aplicaciones utilizando TypeScript, React, React Native y Next.js. Mi enfoque abarca todo el ciclo de desarrollo, adaptándome a variados entornos y priorizando la experiencia del usuario. Destaco en la colaboración con equipos para impulsar innovaciones y mantener altos estándares de calidad en cada proyecto.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Buenos Aires",
+      "countryCode": "AR",
+      "region": "Argentina"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "martinpintos",
+        "url": "https://linkedin.com/in/martinpintos"
+      },
+      {
+        "network": "GitHub",
+        "username": "martinpintos",
+        "url": "https://github.com/martinpintos"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Inmind Software",
+      "position": "Ingeniero de Software Mobile",
+      "url": "https://inmindsoftware.com",
+      "startDate": "2022-05-30",
+      "endDate": null,
+      "summary": "Description…"
+    },
+    {
+      "name": "HPY Camper",
+      "position": "Desarrollador React Native",
+      "url": "https://hpycamper.se",
+      "startDate": "2022-01-03",
+      "endDate": "2022-04-29",
+      "summary": "Description…"
+    },
+    {
+      "name": "Unitech",
+      "position": "IT Trainee",
+      "url": "https://www.unitech-corp.com",
+      "startDate": "2020-02-10",
+      "endDate": "2021-12-31",
+      "summary": "Description…"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad de Londres",
+      "url": "https://www.london.ac.uk/",
+      "area": "Ciencias de la Computación",
+      "studyType": "Licenciatura en Ciencias de la Computación (Machine Learning y Inteligencia Artificial)",
+      "startDate": "2023-04",
+      "endDate": null
+    },
+    {
+      "institution": "AHK Argentina",
+      "url": "https://www.ahkargentina.com.ar/",
+      "area": "Técnologia de la Información",
+      "studyType": "Tecnicatura en Sistemas IT",
+      "startDate": "2020-01",
+      "endDate": "2021-12"
+    }
+  ],
+  "skills": [
+    {
+      "name": "React",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "React Native",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "Next.js",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "Node.js",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Web", "Backend"]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsivo"]
+    },
+    {
+      "name": "Jest",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Testing"]
+    },
+    {
+      "name": "Storybook",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "Figma",
+      "level": "Intermedio",
+      "keywords": ["Diseño", "Prototipado"]
+    },
+    {
+      "name": "Git",
+      "level": "Intermedio",
+      "keywords": ["Control de Versiones"]
+    },
+    {
+      "name": "GitHub",
+      "level": "Intermedio",
+      "keywords": ["Control de Versiones"]
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsivo"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Avanzado"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Newsaki",
+      "description": "Aplicación web para obtener información sobre anime y manga",
+      "highlights": ["Next.js", "Chakra UI", "Jikan API"],
+      "url": "https://newsaki.vercel.app"
+    }
+  ]
+}
