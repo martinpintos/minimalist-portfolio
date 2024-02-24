@@ -8,7 +8,7 @@ export default function Skills() {
       <ul className="flex flex-wrap -m-1">
         {cv.skills.map(({ name }) => (
           <li key={name} className="m-1">
-            <Chip size="sm" variant="shadow" color="success">
+            <Chip size="md" variant="shadow" color="success">
               {name}
             </Chip>
           </li>
