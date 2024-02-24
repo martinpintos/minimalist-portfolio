@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Experience() {
   return (
     <Section title="Experiencia laboral">
-      <ul className="flex flex-col gap-8">
+      <ul className="flex flex-col space-y-8">
         {work.map(
           ({ name, position, url, startDate, endDate, summary, badges }) => {
             const start = new Date(startDate)
@@ -48,7 +48,9 @@ export default function Experience() {
                     </time>
                   </header>
 
-                  <h4 className="text-sm font-mono">{position}</h4>
+                  <h4 className="text-sm font-mono text-foreground-900">
+                    {position}
+                  </h4>
 
                   <footer className="font-mono text-xs text-foreground-600">
                     {summary}

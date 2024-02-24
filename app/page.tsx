@@ -7,7 +7,7 @@ import Education from "@/components/sections/education";
 
 export default function Home() {
   return (
-    <main className="max-w-screen-md mx-auto px-4 pt-4">
+    <main className="max-w-screen-md mx-auto px-4 pt-4 sm:pt-16">
       <Hero />
       <About />
       <Experience />
