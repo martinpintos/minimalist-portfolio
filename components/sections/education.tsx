@@ -29,7 +29,7 @@ export default function Education() {
             <li key={`${institution}`}>
               <article className="space-y-1.5">
                 <header className="justify-between flex-row flex items-center">
-                  <h3 className="font-extrabold tracking-wide text-base">
+                  <h3 className="font-extrabold text-base">
                     {institution}
                   </h3>
 
