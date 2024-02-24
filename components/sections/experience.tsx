@@ -28,7 +28,7 @@ export default function Experience() {
             const period = `${start} - ${end}`;
 
             return (
-              <li>
+              <li key={name}>
                 <article className="space-y-1.5">
                   <header className="justify-between flex-row flex items-center">
                     <div className="flex flex-row items-center space-x-1.5">
