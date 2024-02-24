@@ -8,35 +8,47 @@ export default function Experience() {
     <Section title="Experiencia laboral">
       <ul className="flex flex-col space-y-8">
         {cv.work.map(
-          ({ name, position, url, startDate, endDate, summary, badges }) => {
-            const start = new Date(startDate)
-              .toLocaleDateString("es-ES", {
-                month: "long",
-                year: "numeric",
-              })
-              .replace(/^\w/, (c) => c.toUpperCase());
+          ({
+            name,
+            position,
+            url,
+            startDate,
+            endDate,
+            summary,
+            badges,
+            highlights,
+          }) => {
+            const startMonth = new Date(startDate).toLocaleString("es-ES", {
+              month: "long",
+            });
+            const startYear = new Date(startDate).getFullYear();
+            const start = `${
+              startMonth.charAt(0).toUpperCase() + startMonth.slice(1)
+            } ${startYear}`; // Format as 'Mayo 2022'
 
+            const endMonth = endDate
+              ? new Date(endDate).toLocaleString("es-ES", { month: "long" })
+              : "";
+            const endYear = endDate ? new Date(endDate).getFullYear() : "";
             const end = endDate
-              ? new Date(endDate)
-                  .toLocaleDateString("es-ES", {
-                    month: "long",
-                    year: "numeric",
-                  })
-                  .replace(/^\w/, (c) => c.toUpperCase())
-              : "Actual";
-
+              ? `${
+                  endMonth.charAt(0).toUpperCase() + endMonth.slice(1)
+                } ${endYear}`
+              : "Actualidad";
             const period = `${start} - ${end}`;
 
             return (
               <li key={`${name}`}>
                 <article className="space-y-1.5">
-                  <header className="justify-between flex-row flex items-center">
-                    <div className="flex flex-row items-center space-x-1.5">
+                  {/* Company, Period and Badges */}
+                  <header className="flex flex-row items-center justify-between">
+                    <div className="flex flex-row space-x-1.5 items-center">
                       <Link title={`Ir a ${name}`} href={url} target="_blank">
-                        <h3 className="font-bold text-base hover:underline">
+                        <h3 className="font-extrabold text-base tracking-wider hover:underline">
                           {name}
                         </h3>
                       </Link>
+
                       {badges.map((badge) => (
                         <Chip
                           key={badge}
@@ -48,18 +60,38 @@ export default function Experience() {
                         </Chip>
                       ))}
                     </div>
-                    <time className="text-sm font-semibold text-foreground-900">
+
+                    <time className="text-sm hidden sm:block font-medium text-foreground-600">
                       {period}
                     </time>
                   </header>
 
-                  <h4 className="text-sm font-mono text-foreground-900">
+                  <time className="text-sm sm:hidden font-medium text-foreground-600">
+                    {period}
+                  </time>
+
+                  {/* Title*/}
+                  <h4 className="text-sm font-mono font-semibold text-foreground-900">
                     {position}
                   </h4>
 
-                  <footer className="font-mono text-xs text-foreground-600">
+                  {/* Summary */}
+                  <p className="font-mono text-xs text-foreground-600">
                     {summary}
-                  </footer>
+                  </p>
+
+                  {/* Highlights */}
+                  {highlights && highlights.length > 0 && (
+                    <ul className="flex flex-wrap -m-1">
+                      {highlights.map((highlight) => (
+                        <li key={highlight} className="m-1">
+                          <Chip size="sm" variant="shadow" color="warning">
+                            {highlight}
+                          </Chip>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </article>
               </li>
             );

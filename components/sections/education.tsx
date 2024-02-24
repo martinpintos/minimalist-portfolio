@@ -6,35 +6,43 @@ export default function Education() {
     <Section title="Educación">
       <ul className="space-y-8">
         {cv.education.map(({ institution, studyType, startDate, endDate }) => {
-          const start = new Date(startDate)
-            .toLocaleDateString("es-ES", {
-              month: "long",
-              year: "numeric",
-            })
-            .replace(/^\w/, (c) => c.toUpperCase());
+          const startMonth = new Date(startDate).toLocaleString("es-ES", {
+            month: "long",
+          });
+          const startYear = new Date(startDate).getFullYear();
+          const start = `${
+            startMonth.charAt(0).toUpperCase() + startMonth.slice(1)
+          } ${startYear}`; // Format as 'Mayo 2022'
 
+          const endMonth = endDate
+            ? new Date(endDate).toLocaleString("es-ES", { month: "long" })
+            : "";
+          const endYear = endDate ? new Date(endDate).getFullYear() : "";
           const end = endDate
-            ? new Date(endDate)
-                .toLocaleDateString("es-ES", {
-                  month: "long",
-                  year: "numeric",
-                })
-                .replace(/^\w/, (c) => c.toUpperCase())
-            : "Actual";
-
+            ? `${
+                endMonth.charAt(0).toUpperCase() + endMonth.slice(1)
+              } ${endYear}`
+            : "Actualidad";
           const period = `${start} - ${end}`;
+
           return (
             <li key={`${institution}`}>
               <article className="space-y-1.5">
                 <header className="justify-between flex-row flex items-center">
-                  <h3 className="font-bold text-base">{institution}</h3>
+                  <h3 className="font-extrabold tracking-wide text-base">
+                    {institution}
+                  </h3>
 
-                  <time className="text-sm font-semibold text-foreground-900">
+                  <time className="text-sm hidden sm:block font-medium text-foreground-600">
                     {period}
                   </time>
                 </header>
 
-                <h4 className="text-sm font-mono text-foreground-600">
+                <time className="text-sm sm:hidden font-medium text-foreground-600">
+                  {period}
+                </time>
+
+                <h4 className="text-sm font-mono font-semibold text-foreground-900">
                   {studyType}
                 </h4>
               </article>
