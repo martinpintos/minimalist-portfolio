@@ -42,9 +42,9 @@ export default function Experience() {
                 <article className="space-y-1.5">
                   {/* Company, Period and Badges */}
                   <header className="flex flex-row items-center justify-between">
-                    <div className="flex flex-row space-x-1.5 items-center">
+                    <div className="flex flex-row space-x-1 items-center">
                       <Link title={`Ir a ${name}`} href={url} target="_blank">
-                        <h3 className="font-extrabold text-base tracking-wider hover:underline">
+                        <h3 className="font-extrabold text-base hover:underline">
                           {name}
                         </h3>
                       </Link>
