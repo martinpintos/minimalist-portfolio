@@ -48,7 +48,16 @@
       "badges": ["Remoto"],
       "startDate": "2022-01-03",
       "endDate": "2022-04-29",
-      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "highlights": [
+        "React Native",
+        "Redux",
+        "Firebase",
+        "TypeScript",
+        "Tailwind CSS",
+        "AWS",
+        "Expo"
+      ]
     },
     {
       "name": "Unitech",
