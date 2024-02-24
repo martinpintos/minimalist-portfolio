@@ -5,10 +5,10 @@ import { Chip } from "@nextui-org/react";
 export default function Skills() {
   return (
     <Section title="Habilidades">
-      <ul className="flex flex-wrap">
+      <ul className="flex flex-wrap -m-2">
         {cv.skills.map(({ name }) => (
-          <li key={name} className="mr-2">
-            <Chip size="sm" color="success">
+          <li key={name} className="m-2">
+            <Chip size="sm" variant="shadow" color="warning">
               {name}
             </Chip>
           </li>
