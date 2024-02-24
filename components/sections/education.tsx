@@ -1,11 +1,11 @@
 import Section from "@/components/section";
-import { education } from "@/lib/cv.json";
+import cv from "@/lib/cv.json";
 
 export default function Education() {
   return (
     <Section title="Educación">
       <ul className="space-y-8">
-        {education.map(({ institution, studyType, startDate, endDate }) => {
+        {cv.education.map(({ institution, studyType, startDate, endDate }) => {
           const start = new Date(startDate)
             .toLocaleDateString("es-ES", {
               month: "long",
