@@ -24,7 +24,7 @@ export default function Education() {
 
           const period = `${start} - ${end}`;
           return (
-            <li key={institution}>
+            <li key={`${institution}`}>
               <article className="space-y-1.5">
                 <header className="justify-between flex-row flex items-center">
                   <h3 className="font-bold text-base">{institution}</h3>

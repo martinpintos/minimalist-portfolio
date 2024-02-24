@@ -28,7 +28,7 @@ export default function Experience() {
             const period = `${start} - ${end}`;
 
             return (
-              <li key={name}>
+              <li key={`${name}`}>
                 <article className="space-y-1.5">
                   <header className="justify-between flex-row flex items-center">
                     <div className="flex flex-row items-center space-x-1.5">
@@ -38,7 +38,12 @@ export default function Experience() {
                         </h3>
                       </Link>
                       {badges.map((badge) => (
-                        <Chip color="success" variant="shadow" size="sm">
+                        <Chip
+                          key={badge}
+                          color="success"
+                          variant="shadow"
+                          size="sm"
+                        >
                           {badge}
                         </Chip>
                       ))}
