@@ -1,5 +1,4 @@
-import React from "react";
-import Section from "./section";
+import Section from "@/components/section";
 
 export default function Education() {
   return <Section title="Educación">Education</Section>;

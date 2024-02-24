@@ -1,5 +1,4 @@
-import React from "react";
-import Section from "./section";
+import Section from "@/components/section";
 
 export default function Projects() {
   return <Section title="Proyectos">Projects</Section>;
