@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Mulish } from "next/font/google";
 import { Providers } from "./providers";
 import { basics } from "@/cv.json";
+import "./globals.css";
 
 const { name, label } = basics;
 
-const inter = Inter({ subsets: ["latin"] });
+const raleway = Mulish({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: `${name} | Portfolio`,
@@ -19,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={inter.className}>
+    <html lang="en" className="light">
+      <body className={raleway.className}>
         <Providers>{children}</Providers>
       </body>
     </html>
