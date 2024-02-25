@@ -22,13 +22,13 @@ export default function Footer() {
   return (
     <Section>
       <p className="text-foreground-600 text-sm font-light">
-        Created using <Link href="https://nextjs.org">Next.js</Link>, styled
-        with <Link href="https://tailwindcss.com">Tailwind CSS</Link> and
-        enhanced by <Link href="https://nextui.org">Next UI</Link>, deployed
-        with Vercel. This site utilizes icons from{" "}
-        <Link href="https://lucide.dev">Lucide</Link>, and the{" "}
-        <Link href="https://fonts.google.com/specimen/Mulish">Mulish</Link> font
-        as the primary typeface. All the code is open source and available at{" "}
+        Created by me using <Link href="https://nextjs.org">Next.js</Link>,
+        <Link href="https://tailwindcss.com">Tailwind CSS</Link>, and{" "}
+        <Link href="https://nextui.org">Next UI</Link>, with deployment by
+        Vercel. It features <Link href="https://lucide.dev">Lucide</Link> icons
+        and the{" "}
+        <Link href="https://fonts.google.com/specimen/Mulish">Mulish</Link>{" "}
+        font. Code is open source on{" "}
         <Link href="https://github.com/martinpintos/minimalist-portfolio">
           GitHub
         </Link>
