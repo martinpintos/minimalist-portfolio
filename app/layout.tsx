@@ -13,7 +13,7 @@ const mulish = Mulish({
 
 export const metadata: Metadata = {
   title: `${name} | Portfolio`,
-  description: `${name} - ${label}`,
+  description: `${name} | ${label}`,
 };
 
 export default function RootLayout({
