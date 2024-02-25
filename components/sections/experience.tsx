@@ -61,12 +61,12 @@ export default function Experience() {
                       ))}
                     </div>
 
-                    <time className="text-sm hidden sm:block font-medium text-foreground-600">
+                    <time className="text-sm hidden xs:block font-medium text-foreground-600">
                       {period}
                     </time>
                   </header>
 
-                  <time className="text-sm sm:hidden font-medium text-foreground-600">
+                  <time className="text-sm xs:hidden font-medium text-foreground-600">
                     {period}
                   </time>
 

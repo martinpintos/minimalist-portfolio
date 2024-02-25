@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
 import { nextui } from "@nextui-org/react";
 
 const config: Config = {
@@ -9,6 +10,10 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      xs: "375px",
+      ...defaultTheme.screens,
+    },
     extend: {},
   },
   plugins: [nextui()],

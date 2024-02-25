@@ -30,6 +30,7 @@ export default function Hero() {
         </div>
 
         <Image
+          className="pl-2"
           loading="eager"
           width={110}
           height={110}

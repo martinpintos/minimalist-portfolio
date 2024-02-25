@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
 import { Providers } from "./providers";
 import { basics } from "@/lib/cv.json";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const { name, label } = basics;
@@ -23,7 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={mulish.className}>
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <Analytics />
+        </Providers>
       </body>
     </html>
   );

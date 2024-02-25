@@ -29,16 +29,14 @@ export default function Education() {
             <li key={`${institution}`}>
               <article className="space-y-1.5">
                 <header className="justify-between flex-row flex items-center">
-                  <h3 className="font-extrabold text-base">
-                    {institution}
-                  </h3>
+                  <h3 className="font-extrabold text-base">{institution}</h3>
 
-                  <time className="text-sm hidden sm:block font-medium text-foreground-600">
+                  <time className="text-sm hidden xs:block font-medium text-foreground-600">
                     {period}
                   </time>
                 </header>
 
-                <time className="text-sm sm:hidden font-medium text-foreground-600">
+                <time className="text-sm xs:hidden font-medium text-foreground-600">
                   {period}
                 </time>
 
