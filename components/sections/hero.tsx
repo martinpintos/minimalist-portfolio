@@ -9,8 +9,19 @@ const { name, label, image, location, profiles } = basics;
 export default function Hero() {
   return (
     <Section>
-      <div className="flex-row flex justify-between items-center">
-        <div className="space-y-1.5 w-8/12">
+      <div className="flex-col xs:flex-row flex xs: justify-between xs:items-center">
+        <div className="flex xs:order-2 xs:pl-2 mb-2 xs:mb-0">
+          <Image
+            className="h-24 w-24 xs:h-28 xs:w-28"
+            loading="eager"
+            width={120}
+            height={120}
+            alt="Picture of me"
+            src={image}
+          />
+        </div>
+
+        <div className="space-y-1.5 xs:w-8/12 xs: order-1">
           <h1 className="text-3xl font-extrabold">{name}</h1>
 
           <p className="text-base text-foreground-600">{label}</p>
@@ -28,15 +39,6 @@ export default function Hero() {
             <span>{`${location.city}, ${location.region}`}</span>
           </Link>
         </div>
-
-        <Image
-          className="pl-2"
-          loading="eager"
-          width={110}
-          height={110}
-          alt="Picture of me"
-          src={image}
-        />
       </div>
     </Section>
   );
