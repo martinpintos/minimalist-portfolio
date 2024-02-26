@@ -44,9 +44,6 @@ export default function Projects() {
                           <Chip
                             size="sm"
                             variant="shadow"
-                            classNames={{
-                              content: "text-[0.6rem]",
-                            }}
                             color="success"
                           >
                             {highlight}
