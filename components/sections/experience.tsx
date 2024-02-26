@@ -37,6 +37,8 @@ export default function Experience() {
               : "Actualidad";
             const period = `${start} - ${end}`;
 
+            const summaryParagraphs = summary.split("\n\n");
+
             return (
               <li key={name}>
                 <article className="space-y-1.5">
@@ -76,9 +78,11 @@ export default function Experience() {
                   </h4>
 
                   {/* Summary */}
-                  <p className="font-mono text-xs text-foreground-600">
-                    {summary}
-                  </p>
+                  <div className="font-mono text-xs text-foreground-600 space-y-1.5">
+                    {summaryParagraphs.map((paragraph, index) => (
+                      <p key={index}>{paragraph}</p>
+                    ))}
+                  </div>
 
                   {/* Highlights */}
                   {highlights && highlights.length > 0 && (

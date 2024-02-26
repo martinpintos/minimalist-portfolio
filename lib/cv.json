@@ -34,7 +34,7 @@
       "badges": ["Remoto"],
       "startDate": "2022-05-30",
       "endDate": null,
-      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "summary": "Lideré el desarrollo y la gestión del ciclo de vida de más de diez aplicaciones web y móviles, usando React y React Native para una experiencia de usuario óptima. Integré módulos nativos y APIs para una funcionalidad fluida en Android e iOS. Mejoré el rendimiento del front-end y promoví la reutilización de código, mejorando significativamente la capacidad de respuesta de las aplicaciones y la eficiencia del desarrollo.\n\nImplementé animaciones avanzadas, mejorando la participación de la interfaz de usuario. Gestioné actualizaciones y mantenimiento, manteniendo la relevancia de la aplicación y la satisfacción del usuario. Manejé con destreza las presentaciones en las tiendas de aplicaciones, ampliando el alcance de los usuarios. Utilicé AWS, Expo y Firebase para entregar soluciones de software escalables y robustas.\n\nRepliqué diseños con extrema precisión, asegurando que cada detalle reflejara fielmente las especificaciones, lo que resultó en productos altamente detallados y fieles al diseño original.",
       "highlights": [
         "Desarrollo de apps con React Native",
         "Mantenimiento de aplicaciones existentes"
@@ -47,7 +47,7 @@
       "badges": ["Remoto"],
       "startDate": "2022-01-03",
       "endDate": "2022-04-29",
-      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "summary": "Lideré el desarrollo de una aplicación multiplataforma para iOS y Android, utilizando un conjunto tecnológico integral que incluía TypeScript, Redux, Jest, Python, Node.js, PostgreSQL, AWS, Git, GitLab, Expo y Tailwind CSS, con el desarrollo principal en React Native.\n\nIncorporé funcionalidades críticas como notificaciones push de Firebase, Firebase Analytics, React Navigation, Adyen, autenticación local y almacenamiento asíncrono, mejorando notablemente la usabilidad de la aplicación y elevando la experiencia del usuario.",
       "highlights": [
         "React Native",
         "Redux",
@@ -55,7 +55,8 @@
         "TypeScript",
         "Tailwind CSS",
         "AWS",
-        "Expo"
+        "Expo",
+        "Jest"
       ]
     },
     {
@@ -65,7 +66,16 @@
       "badges": [],
       "startDate": "2020-02-10",
       "endDate": "2021-12-31",
-      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "summary": "Inicié y dirigí la integración de un asistente virtual utilizando IBM Watson en una app web y móvil, mejorando la experiencia de usuario. Desarrollé pruebas automáticas con TestProject y JUnit, acelerando lanzamientos mediante Jenkins y GitLab.\n\nImplementé dashboards personalizados con datos de Jira para optimizar la gestión de proyectos y desarrollé servicios REST en Java para una mejor gestión de datos. Además, actualicé interfaces utilizando Angular, mejorando la usabilidad y modernizando aplicaciones existentes.",
+      "highlights": [
+        "Java",
+        "JUnit",
+        "TypeScript",
+        "Angular",
+        "IBM Watson",
+        "Jenkins",
+        "GitLab"
+      ]
     }
   ],
   "education": [
