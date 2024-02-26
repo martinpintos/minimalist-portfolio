@@ -38,7 +38,7 @@ export default function Experience() {
             const period = `${start} - ${end}`;
 
             return (
-              <li key={`${name}`}>
+              <li key={name}>
                 <article className="space-y-1.5">
                   {/* Company, Period and Badges */}
                   <header className="flex flex-row items-center justify-between">
