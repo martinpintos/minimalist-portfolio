@@ -3,10 +3,12 @@ import { Image } from "@nextui-org/react";
 import { basics } from "@/lib/cv.json";
 import Link from "next/link";
 import { GlobeIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const { name, label, image, location, profiles } = basics;
 
 export default function Hero() {
+  const t = useTranslations("cv.basics");
   return (
     <Section>
       <div className="flex-col xs:flex-row flex xs: justify-between xs:items-center">
@@ -22,9 +24,9 @@ export default function Hero() {
         </div>
 
         <div className="space-y-1.5 xs:w-8/12 xs: order-1">
-          <h1 className="text-3xl font-extrabold">{name}</h1>
+          <h1 className="text-3xl font-extrabold">{t("name")}</h1>
 
-          <p className="text-base text-foreground-600">{label}</p>
+          <p className="text-base text-foreground-600">{t("label")}</p>
 
           <Link
             href={`https://www.google.com/maps/place/${location.city.replace(
@@ -36,7 +38,7 @@ export default function Hero() {
           >
             <GlobeIcon size={12} />
 
-            <span>{`${location.city}, ${location.region}`}</span>
+            <span>{`${t("location.city")}, ${t("location.region")}`}</span>
           </Link>
         </div>
       </div>
