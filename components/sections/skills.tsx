@@ -1,10 +1,13 @@
 import Section from "@/components/section";
 import cv from "@/lib/cv.json";
 import { Chip } from "@nextui-org/react";
+import { useTranslations } from "next-intl";
 
 export default function Skills() {
+  const t = useTranslations();
+
   return (
-    <Section title="Habilidades">
+    <Section title={t("sections.skills")}>
       <ul className="flex flex-wrap -m-1">
         {cv.skills.map(({ name }) => (
           <li key={name} className="m-1">

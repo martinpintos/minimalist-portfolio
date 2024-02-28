@@ -1,15 +1,17 @@
 import Section from "@/components/section";
 import cv from "@/lib/cv.json";
 import { CardFooter, CardHeader, Chip, Card } from "@nextui-org/react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export default function Projects() {
+  const t = useTranslations();
   return (
-    <Section title="Proyectos">
+    <Section title={t("sections.projects")}>
       <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 -mx-1.5">
-        {cv.projects.map(({ name, description, highlights, url }) => {
+        {cv.projects.map(({ name, highlights, url }, index) => {
           return (
-            <li key={name}>
+            <li key={t(`cv.projects.${index}.name`)}>
               <Card
                 isBlurred
                 shadow="sm"
@@ -18,9 +20,13 @@ export default function Projects() {
                 <CardHeader className="flex-col items-start">
                   {url ? (
                     <div className="flex flex-row space-x-1 items-center">
-                      <Link title={`Ir a ${name}`} href={url} target="_blank">
+                      <Link
+                        title={`Ir a ${t(`cv.projects.${index}.name`)}`}
+                        href={url}
+                        target="_blank"
+                      >
                         <h3 className="font-bold text-lg md:text-base hover:underline">
-                          {name}
+                          {t(`cv.projects.${index}.name`)}
                         </h3>
                       </Link>
                       <span className="text-green-400 animate-pulse text-sm">
@@ -28,11 +34,13 @@ export default function Projects() {
                       </span>
                     </div>
                   ) : (
-                    <h3 className="font-bold text-lg md:text-base">{name}</h3>
+                    <h3 className="font-bold text-lg md:text-base">
+                      {t(`cv.projects.${index}.name`)}
+                    </h3>
                   )}
 
                   <p className="font-mono text-xs text-foreground-600">
-                    {description}
+                    {t(`cv.projects.${index}.description`)}
                   </p>
                 </CardHeader>
 
@@ -41,11 +49,7 @@ export default function Projects() {
                     <ul className="flex flex-wrap -m-1">
                       {highlights.map((highlight) => (
                         <li key={highlight} className="m-1">
-                          <Chip
-                            size="sm"
-                            variant="shadow"
-                            color="success"
-                          >
+                          <Chip size="sm" variant="shadow" color="success">
                             {highlight}
                           </Chip>
                         </li>

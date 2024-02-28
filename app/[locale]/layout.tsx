@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
-import { Providers } from "./providers";
+import { Providers } from "../providers";
 import { basics } from "@/lib/cv.json";
 import { Analytics } from "@vercel/analytics/react";
-import "./globals.css";
+import "../globals.css";
 
 const { name, label } = basics;
 
@@ -18,11 +18,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang={locale} className="dark">
       <body className={mulish.className}>
         <Providers>
           {children}

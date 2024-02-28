@@ -1,35 +1,40 @@
 import Section from "@/components/section";
 import cv from "@/lib/cv.json";
+import { useTranslations } from "next-intl";
 
 export default function Education() {
+  const t = useTranslations();
+
   return (
-    <Section title="Educación">
+    <Section title={t("sections.education")}>
       <ul className="space-y-8">
-        {cv.education.map(({ institution, studyType, startDate, endDate }) => {
-          const startMonth = new Date(startDate).toLocaleString("es-ES", {
+        {cv.education.map(({ institution, startDate, endDate }, index) => {
+          const startMonth = new Date(startDate).toLocaleString(t("locale"), {
             month: "long",
           });
           const startYear = new Date(startDate).getFullYear();
           const start = `${
             startMonth.charAt(0).toUpperCase() + startMonth.slice(1)
-          } ${startYear}`; // Format as 'Mayo 2022'
+          } ${startYear}`;
 
           const endMonth = endDate
-            ? new Date(endDate).toLocaleString("es-ES", { month: "long" })
+            ? new Date(endDate).toLocaleString(t("locale"), { month: "long" })
             : "";
           const endYear = endDate ? new Date(endDate).getFullYear() : "";
           const end = endDate
             ? `${
                 endMonth.charAt(0).toUpperCase() + endMonth.slice(1)
               } ${endYear}`
-            : "Actualidad";
+            : t("present");
           const period = `${start} - ${end}`;
 
           return (
             <li key={institution}>
               <article className="space-y-1.5">
                 <header className="justify-between flex-row flex items-center">
-                  <h3 className="font-extrabold text-base">{institution}</h3>
+                  <h3 className="font-extrabold text-base">
+                    {t(`cv.education.${index}.institution`)}
+                  </h3>
 
                   <time className="text-sm hidden xs:block font-medium text-foreground-600">
                     {period}
@@ -41,7 +46,7 @@ export default function Education() {
                 </time>
 
                 <h4 className="text-sm font-mono font-semibold text-foreground-900">
-                  {studyType}
+                  {t(`cv.education.${index}.studyType`)}
                 </h4>
               </article>
             </li>
