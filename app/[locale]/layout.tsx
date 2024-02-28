@@ -1,28 +1,31 @@
-import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
 import { Providers } from "../providers";
-import { basics } from "@/lib/cv.json";
 import { Analytics } from "@vercel/analytics/react";
 import "../globals.css";
-
-const { name, label } = basics;
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
 const mulish = Mulish({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: `${name} | Portfolio`,
-  description: `${name} | ${label}`,
-};
+export async function generateMetadata({ params: { locale } }: any) {
+  const t = await getTranslations({ locale, namespace: "cv" });
 
-export default function RootLayout({
+  return {
+    title: `${t("basics.name")} | ${t("basics.label")}`,
+    description: `${t("basics.name")}} | ${t("basics.label")}`,
+  };
+}
+
+export default async function RootLayout({
   children,
   params: { locale },
 }: Readonly<{
   children: React.ReactNode;
   params: { locale: string };
 }>) {
+  unstable_setRequestLocale(locale);
+
   return (
     <html lang={locale} className="dark">
       <body className={mulish.className}>
