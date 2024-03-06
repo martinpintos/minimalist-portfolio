@@ -1,11 +1,18 @@
 import Section from "@/components/section";
-import { Image } from "@nextui-org/react";
+import { Button, Image } from "@nextui-org/react";
 import { basics } from "@/lib/cv.json";
 import Link from "next/link";
-import { GlobeIcon } from "lucide-react";
+import {
+  Github,
+  GlobeIcon,
+  Linkedin,
+  LinkedinIcon,
+  Mail,
+  Phone,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 
-const { name, label, image, location, profiles } = basics;
+const { image, location, profiles, email } = basics;
 
 export default function Hero() {
   const t = useTranslations("cv.basics");
@@ -23,7 +30,7 @@ export default function Hero() {
           />
         </div>
 
-        <div className="space-y-1.5 xs:w-8/12 xs: order-1">
+        <div className="space-y-1.5 xs:w-8/12 order-1">
           <h1 className="text-3xl font-extrabold">{t("name")}</h1>
 
           <p className="text-base text-foreground-600">{t("label")}</p>
@@ -40,6 +47,55 @@ export default function Hero() {
 
             <span>{`${t("location.city")}, ${t("location.region")}`}</span>
           </Link>
+
+          <ul className="space-x-1.5 flex flex-row pt-1">
+            <li>
+              <Link href={`mailto:${email}`}>
+                <Button
+                  size="sm"
+                  variant="bordered"
+                  isIconOnly
+                  className="border border-white"
+                >
+                  <Mail size={16} />
+                </Button>
+              </Link>
+            </li>
+            {/* <li>
+              <Button
+                size="sm"
+                variant="bordered"
+                isIconOnly
+                className="border border-white"
+              >
+                <Phone size={16} />
+              </Button>
+            </li> */}
+            <li>
+              <Link href={profiles[0].url} target="_blank">
+                <Button
+                  size="sm"
+                  variant="bordered"
+                  isIconOnly
+                  className="border border-white"
+                >
+                  <Github size={16} />
+                </Button>
+              </Link>
+            </li>
+            <li>
+              <Link href={profiles[1].url} target="_blank">
+                <Button
+                  size="sm"
+                  variant="bordered"
+                  isIconOnly
+                  className="border border-white"
+                >
+                  <Linkedin size={16} />
+                </Button>
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </Section>
