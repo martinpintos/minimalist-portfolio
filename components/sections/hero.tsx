@@ -72,7 +72,7 @@ export default function Hero() {
               </Button>
             </li> */}
             <li>
-              <Link href={profiles[0].url} target="_blank">
+              <Link href={profiles[1].url} target="_blank">
                 <Button
                   size="sm"
                   variant="bordered"
@@ -84,7 +84,7 @@ export default function Hero() {
               </Link>
             </li>
             <li>
-              <Link href={profiles[1].url} target="_blank">
+              <Link href={profiles[0].url} target="_blank">
                 <Button
                   size="sm"
                   variant="bordered"
