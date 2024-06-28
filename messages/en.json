@@ -48,17 +48,24 @@
     },
     "work": [
       {
+        "name": "Perficient",
+        "position": "React Native Developer",
+        "url": "https://www.perficient.com",
+        "badges": [],
+        "startDate": "2024-06-10",
+        "endDate": null,
+        "summary": "",
+        "highlights": ["React Native", "AWS", "Redux"]
+      },
+      {
         "name": "Inmind Software",
         "position": "Mobile Software Engineer",
         "url": "https://inmindsoftware.com",
         "badges": ["Remote"],
         "startDate": "2022-05-30",
-        "endDate": null,
+        "endDate": "2024-06-07",
         "summary": "Led development and lifecycle management of over ten web and mobile applications, leveraging React and React Native for optimal user experience. Integrated native modules and APIs for seamless Android and iOS functionality. Enhanced front-end performance and fostered code reusability, significantly improving application responsiveness and development efficiency.\n\nEnhanced user interaction through advanced animations and kept applications up to date to ensure satisfaction and relevance. Supervised app store submissions, expanding our market reach. Implemented solutions with AWS, Expo, and Firebase to ensure scalability and robustness, and ensured that the design of the applications closely aligned with the original requirements.",
-        "highlights": [
-          "App development with React Native",
-          "Maintenance of existing applications"
-        ]
+        "highlights": ["App development with React Native", "Maintenance of existing applications"]
       },
       {
         "name": "HPY Camper",
@@ -87,15 +94,7 @@
         "startDate": "2020-02-10",
         "endDate": "2021-12-31",
         "summary": "Pioneered the creation and integration of a virtual assistant using IBM Watson in a web and mobile app, improving the user experience. Developed a broad suite of automated tests with TestProject and JUnit, enhancing software quality and expediting release cycles through the adoption of Jenkins and GitLab for continuous integration.\n\nImplemented custom dashboards with data from Jira to optimize project management and developed REST services in Java for better data management. Additionally, I updated interfaces using Angular, improving usability and modernizing existing applications.",
-        "highlights": [
-          "Java",
-          "JUnit",
-          "TypeScript",
-          "Angular",
-          "IBM Watson",
-          "Jenkins",
-          "GitLab"
-        ]
+        "highlights": ["Java", "JUnit", "TypeScript", "Angular", "IBM Watson", "Jenkins", "GitLab"]
       }
     ],
     "education": [
@@ -190,12 +189,7 @@
       {
         "name": "Tailwind CSS",
         "level": "Master",
-        "keywords": [
-          "Desarrollo Web",
-          "Frontend",
-          "CSS Framework",
-          "Responsive Design"
-        ]
+        "keywords": ["Desarrollo Web", "Frontend", "CSS Framework", "Responsive Design"]
       }
     ],
     "languages": [

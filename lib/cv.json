@@ -28,12 +28,22 @@
   },
   "work": [
     {
+      "name": "Perficient",
+      "position": "Desarrollador React Native",
+      "url": "https://www.perficient.com",
+      "badges": [],
+      "startDate": "2024-06-10",
+      "endDate": null,
+      "summary": "",
+      "highlights": ["React Native", "AWS", "Redux"]
+    },
+    {
       "name": "Inmind Software",
       "position": "Ingeniero de Software Mobile",
       "url": "https://inmindsoftware.com",
       "badges": ["Remoto"],
       "startDate": "2022-05-30",
-      "endDate": null,
+      "endDate": "2024-06-07",
       "summary": "Lideré el desarrollo y la gestión del ciclo de vida de más de diez aplicaciones web y móviles, usando React y React Native para una experiencia de usuario óptima. Integré módulos nativos y APIs para una funcionalidad fluida en Android e iOS. Mejoré el rendimiento del front-end y promoví la reutilización de código, mejorando significativamente la capacidad de respuesta de las aplicaciones y la eficiencia del desarrollo.\n\nMejoré la interacción del usuario mediante animaciones avanzadas y mantuve las aplicaciones actualizadas para garantizar la satisfacción y relevancia. Supervisé la publicación en tiendas de aplicaciones, extendiendo nuestro alcance de mercado. Implementé soluciones con AWS, Expo y Firebase para garantizar escalabilidad y robustez, y me aseguré de que el diseño de las aplicaciones se alineara estrechamente con los requisitos originales.",
       "highlights": [
         "Desarrollo de apps con React Native",
@@ -67,15 +77,7 @@
       "startDate": "2020-02-10",
       "endDate": "2021-12-31",
       "summary": "Inicié y dirigí la integración de un asistente virtual utilizando IBM Watson en una app web y móvil, mejorando la experiencia de usuario. Desarrollé pruebas automáticas con TestProject y JUnit, acelerando lanzamientos mediante Jenkins y GitLab.\n\nImplementé dashboards personalizados con datos de Jira para optimizar la gestión de proyectos y desarrollé servicios REST en Java para una mejor gestión de datos. Además, actualicé interfaces utilizando Angular, mejorando la usabilidad y modernizando aplicaciones existentes.",
-      "highlights": [
-        "Java",
-        "JUnit",
-        "TypeScript",
-        "Angular",
-        "IBM Watson",
-        "Jenkins",
-        "GitLab"
-      ]
+      "highlights": ["Java", "JUnit", "TypeScript", "Angular", "IBM Watson", "Jenkins", "GitLab"]
     }
   ],
   "education": [
@@ -170,12 +172,7 @@
     {
       "name": "Tailwind CSS",
       "level": "Master",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "CSS Framework",
-        "Diseño Responsivo"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsivo"]
     }
   ],
   "languages": [
